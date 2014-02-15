@@ -101,7 +101,8 @@
                                       font-size: 10px;
                                       margin: auto;
                                       position: relative; }
-                                      body header {
+
+                                      header {
                                         padding: 0 102px;
                                         position: absolute;
                                         top: 0;
@@ -110,53 +111,158 @@
                                         z-index: 2;
                                         color: #fff;
                                         text-transform: uppercase; }
-                                        body header h1, body header .socialMedia {
-                                          width: 195px; }
-                                          body header h1 {
+                                        header h1, header .socialMedia {
+                                          width: 209px; }
+                                          header h1 {
                                             display: inline-block;
                                             padding-top: 30px; }
-                                            body header h1 img {
+                                            header h1 img {
                                               height: 30px; }
-                                        body header nav {
+                                        header nav {
                                           display: inline-block;
                                           margin-bottom: 12px;
                                           vertical-align: bottom; }
-                                          body header nav li {
+                                          header nav li {
                                             margin: 0 7px;
                                             letter-spacing: 1px; }
-                                        body header .socialMedia {
+                                        header .socialMedia {
                                           display: inline-block;
                                           text-align: right;
                                           margin-bottom: 12px;
                                           vertical-align: bottom; }
-                                          body header .socialMedia li {
+                                          header .socialMedia li {
                                             margin: 0 2px; }
-                                        body header li {
+                                        header li {
                                           display: inline;
                                           list-style-type: none; }
-                                          body header li a {
+                                          header li a {
                                             color: #fff;
                                             text-decoration: none; }
-                                      body .homeSlider {
-                                        height: 667px;
-                                        position: relative;
-                                        background-image: url('/static/img/home_slider_1.png');
-                                        color: #fff; }
-                                        body .homeSlider .sliderCaption {
-                                          position: absolute;
-                                          width: 347px;
-                                          bottom: 49px;
-                                          right: 98px; }
-                                          body .homeSlider .sliderCaption blockquote {
-                                            font-size: 22px;
-                                            margin-bottom: 11px; }
-                                            body .homeSlider .sliderCaption cite {
-                                              text-transform: uppercase;
-                                              font-style: normal;
-                                              letter-spacing: 1px; }
-                                        body .homeSlider .sliderImageSelect {
-                                          position: absolute;
-                                          bottom: 20px;
-                                          right: 50px; }
-                                      body .socialMedia {
-                                        font-family: socialMedia; }
+
+.homeSlider {
+  height: 667px;
+  position: relative;
+  background-image: url('/static/img/home_slider_1.png');
+  color: #fff; }
+  .homeSlider .sliderCaption {
+    position: absolute;
+    width: 347px;
+    bottom: 49px;
+    right: 98px; }
+    .homeSlider .sliderCaption blockquote {
+      font-size: 22px;
+      margin-bottom: 11px; }
+      .homeSlider .sliderCaption cite {
+        text-transform: uppercase;
+        font-style: normal;
+        letter-spacing: 1px; }
+  .homeSlider .sliderImageSelect {
+    position: absolute;
+    bottom: 20px;
+    right: 50px; }
+
+.socialMedia {
+  font-family: socialMedia; }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 4px; }
+
+    .introduction {
+      height: 298px;
+      background-color: black;
+      color: #fff; }
+      .introduction h2 {
+        padding-left: 113px;
+        padding-top: 83px;
+        display: inline-block;
+        float: left; }
+        .introduction p {
+          display: inline-block;
+          padding-top: 83px;
+          padding-right: 113px;
+          float: right;
+          width: 442px;
+          line-height: 2.5;
+          font-size: 10px;
+          letter-spacing: 2px;
+          color: #b3b3b3; }
+
+.twitterFeed {
+  height: 300px;
+  background-image: url('/static/img/grass_background.png');
+  color: #fff;
+  text-align: center; }
+  .twitterFeed h2 {
+    padding-top: 60px; }
+    .twitterFeed blockquote {
+      width: 350px;
+      margin: auto;
+      letter-spacing: 2px;
+      font-size: 24px;
+      line-height: 1.5;
+      padding-top: 63px;
+      display: inline-block; }
+      .twitterFeed .openQuote, .twitterFeed .closeQuote {
+        display: inline-block;
+        font-size: 65px; }
+        .twitterFeed .openQuote {
+          position: relative;
+          top: -30px; }
+          .twitterFeed .closeQuote {
+            position: relative;
+            bottom: -40px; }
+
+footer .moreInfo {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef; }
+  footer .moreInfo div {
+    display: inline-block;
+    height: 100px;
+    vertical-align: top;
+    padding-top: 22px;
+    line-height: 1.5; }
+    footer .moreInfo div.mailingList {
+      padding-left: 113px;
+      width: 217px; }
+      footer .moreInfo div.moreInfoLinks, footer .moreInfo div.contact,
+      footer .moreInfo div.socialMediaLinks {
+        padding-left: 60px;
+        width: 120px; }
+footer .socialMedia li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 2px; }
+  footer h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal; }
+    footer p, footer ul, footer a, footer .credits {
+      color: #808080; }
+      footer input {
+        width: 140px;
+        display: inline;
+        height: 18px;
+        border-width: 1px;
+        padding: 2px; }
+        footer .joinButton {
+          height: 23px;
+          border-width: 1px;
+          padding: 2px;
+          margin: 0;
+          width: 68px;
+          background-color: #000;
+          color: #fff;
+          display: inline;
+          text-transform: uppercase;
+          font-size: 9px; }
+          footer .credits {
+            padding: 20px 0; }
+            footer .copyright {
+              float: left; }
+              footer .siteBy {
+                float: right; }
+                footer a {
+                  text-decoration: none; }
