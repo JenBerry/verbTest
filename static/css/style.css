@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'proximanova';
+  src: url('/static/fonts/proximanova-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+  @font-face {
+    font-family: 'proximanova';
+    src: url('/static/fonts/proximanova-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal; }
+
+    @font-face {
+      font-family: 'proximanova';
+      src: url('/static/fonts/proximanova-light.ttf') format('truetype');
+      font-weight: lighter;
+      font-style: normal; }
+
+      @font-face {
+        font-family: 'socialMedia';
+        src: url('/static/fonts/ss-social-regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal; }
+
+        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+        pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+        strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+        legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+        canvas, details, figcaption, figure, footer, header, hgroup, menu, nav,
+        section, summary, time, mark, audio, video {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          outline: 0;
+          font-size: 100%;
+          vertical-align: baseline;
+          background: transparent; }
+
+          body {
+            line-height: 1;
+            font-family: proximanova; }
+
+            article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+            nav, section {
+              display: block; }
+
+              nav ul {
+                list-style: none; }
+
+                blockquote, q {
+                  quotes: none;
+                  font-style: italic; }
+
+                  blockquote:before, blockquote:after, q:before, q:after {
+                    content: '';
+                    content: none; }
+
+                    a {
+                      margin: 0;
+                      padding: 0;
+                      font-size: 100%;
+                      vertical-align: baseline;
+                      background: transparent;
+                      color: #000; }
+
+                      ins {
+                        background-color: #ff9;
+                        color: #000;
+                        text-decoration: none; }
+
+                        mark {
+                          background-color: #ff9;
+                          color: #000;
+                          font-style: italic;
+                          font-weight: bold; }
+
+                          del {
+                            text-decoration: line-through; }
+
+                            abbr[title], dfn[title] {
+                              border-bottom: 1px dotted;
+                              cursor: help; }
+
+                              table {
+                                border-collapse: collapse;
+                                border-spacing: 0; }
+
+                                hr {
+                                  display: block;
+                                  height: 1px;
+                                  border: 0;
+                                  border-top: 1px solid #cccccc;
+                                  margin: 1em 0;
+                                  padding: 0; }
+
+                                  input, select {
+                                    vertical-align: middle; }
+
+                                    body {
+                                      max-width: 1000px;
+                                      font-size: 10px;
+                                      margin: auto;
+                                      position: relative; }
+                                      body header {
+                                        padding: 0 102px;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        left: 0;
+                                        z-index: 2;
+                                        color: #fff;
+                                        text-transform: uppercase; }
+                                        body header h1, body header .socialMedia {
+                                          width: 195px; }
+                                          body header h1 {
+                                            display: inline-block;
+                                            padding-top: 30px; }
+                                            body header h1 img {
+                                              height: 30px; }
+                                        body header nav {
+                                          display: inline-block;
+                                          margin-bottom: 12px;
+                                          vertical-align: bottom; }
+                                          body header nav li {
+                                            margin: 0 7px;
+                                            letter-spacing: 1px; }
+                                        body header .socialMedia {
+                                          display: inline-block;
+                                          text-align: right;
+                                          margin-bottom: 12px;
+                                          vertical-align: bottom; }
+                                          body header .socialMedia li {
+                                            margin: 0 2px; }
+                                        body header li {
+                                          display: inline;
+                                          list-style-type: none; }
+                                          body header li a {
+                                            color: #fff;
+                                            text-decoration: none; }
+                                      body .homeSlider {
+                                        height: 667px;
+                                        position: relative;
+                                        background-image: url('/static/img/home_slider_1.png');
+                                        color: #fff; }
+                                        body .homeSlider .sliderCaption {
+                                          position: absolute;
+                                          width: 347px;
+                                          bottom: 49px;
+                                          right: 98px; }
+                                          body .homeSlider .sliderCaption blockquote {
+                                            font-size: 22px;
+                                            margin-bottom: 11px; }
+                                            body .homeSlider .sliderCaption cite {
+                                              text-transform: uppercase;
+                                              font-style: normal;
+                                              letter-spacing: 1px; }
+                                        body .homeSlider .sliderImageSelect {
+                                          position: absolute;
+                                          bottom: 20px;
+                                          right: 50px; }
+                                      body .socialMedia {
+                                        font-family: socialMedia; }
