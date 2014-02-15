@@ -1,0 +1,1 @@
+I decided to use cactus (https://github.com/koenbok/Cactus) since a static site is suficient but I want to avoid writing duplicate code. Cactus allows me to use django templates to generate a static site.

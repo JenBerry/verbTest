@@ -9,13 +9,77 @@
 	<link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">
 
 	{% block header %}
-	<title>Welcome</title>
+	<title>VE&#1071;B</title>
 	{% endblock %}
 
 </head>
 <body>
 	{% block content %}
-	Main content
+		{% block pageHeader %}
+			<header>
+				<h1>VE&#1071;B</h1>
+				<nav>
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/heading_2.html">Heading 2</a></li>
+						<li><a href="/heading_2.html">Heading 3</a></li>
+						<li><a href="/heading_2.html">Heading 4</a></li>
+						<li><a href="/contact_us.html">Contact_us</a></li>
+					</ul>
+				</nav>
+				<ul>
+					<li><a href="">T</a></li>
+					<li><a href="">F</a></li>
+					<li><a href="">L</a></li>
+				</ul>
+			</header>
+		{% endblock %}
+		{% block pageContent %}
+			Hello World!
+		{% endblock %}
+		{% block footer %}
+			<footer>
+				<section>
+					<div>
+						<h3>Verb Brands Update!</h3>
+						<p>Sign up to get the latest on sales, new releases and more...</p>
+						<form action="">
+							<input type="email" placeholder="email address">
+							<input type="submit" value="Join">
+						</form>
+					</div>
+					<div>
+						<h3>More Info</h3>
+						<ul>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Contact Us</a></li>
+							<li><a href="">Terms &asp; Conditions</a></li>
+							<li><a href="">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>Contact</h3>
+						<ul>
+							<li>+44 (0) 1256 880 364</li>
+							<li>hello@verbbrands.com</li>
+						</ul>
+					</div>
+					<div>
+						<h1>Social</h1>
+						<ul>
+							<li><a href="">T</a></li>
+							<li><a href="">F</a></li>
+							<li><a href="">V</a></li>
+							<li><a href="">O</a></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div>Copyright Verb Brands limited. All rights reserved</div>
+					<div>Site by Verb</div>
+				</section>
+			</footer>
+		{% endblock %}
 	{% endblock %}
 
 	{% block scripts %}
