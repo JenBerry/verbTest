@@ -31,7 +31,10 @@
 //colours
 $lightFont: #fff;
 $darkFont: #000;
-
+$lightGrayFont: #b3b3b3;
+$darkGrayFont: #808080;
+$lineColor: #efefef;
+$darkBackgroundColor: #000;
 
 /**
  * Reset syles modified from:
@@ -86,6 +89,7 @@ a {
     vertical-align:baseline;
     background:transparent;
     color: $darkFont;
+    text-decoration: none;
 }
 
 /* change colours to suit your needs */
@@ -112,12 +116,11 @@ table {
     border-collapse:collapse;
     border-spacing:0;
 }
-/* change border colour to suit your needs */
 hr {
     display:block;
     height:1px;
     border:0;
-    border-top:1px solid #cccccc;
+    border-top:1px solid #eee;
     margin:1em 0;
     padding:0;
 }
@@ -149,7 +152,7 @@ header{
     top:0;
     right:0;
     left:0;
-    z-index: 2;
+    z-index: 3;
     color: $lightFont;
     text-transform: uppercase;
 
@@ -186,15 +189,22 @@ header{
         a{
             color:$lightFont;
             text-decoration: none;
+            &:hover{
+                color: $lightGrayFont;
+            }
         }
     }
 }
 .homeSlider{
-    height: 667px;
     position: relative;
-    background-image: url('/static/img/home_slider_1.png');
+    //background-image: url('/static/img/home_slider_1.png');
     color: $lightFont;
+    .flexslider{
+        border:0;
+        margin: 0;
+    }
     .sliderCaption{
+        z-index: 3;
         position: absolute;
         width:347px;
         bottom: 49px;
@@ -217,6 +227,15 @@ header{
         right: 50px;
         font-size: 10px;
         letter-spacing: 1px;
+        list-style-type: none;
+        z-index: 3;
+        li{
+            display: inline;
+            cursor: pointer;
+            &:hover, &.flex-active{
+                color: $lightGrayFont;
+            }
+        }
     }
 }
 .socialMedia{
@@ -233,7 +252,7 @@ h2{
 }
 .introduction{
     padding: 81px 110px 70px 113px;
-    background-color: black;
+    background-color: $darkBackgroundColor;
     color: $lightFont;
     h2{
         
@@ -247,7 +266,7 @@ h2{
         line-height: 2.5;
         font-size: 10px;
         letter-spacing: 1.5px;
-        color: #b3b3b3;
+        color: $lightGrayFont;
         font-family: proximanovaLight;
     }
 }
@@ -284,8 +303,8 @@ h2{
 
 footer{
     .moreInfo{
-        border-top: 1px solid #efefef;
-        border-bottom: 1px solid #efefef;
+        border-top: 1px solid $lineColor;
+        border-bottom: 1px solid $lineColor;
         div{
             display: inline-block;
             height:100px;
@@ -323,7 +342,7 @@ footer{
         font-family: proximanovaBold;
     }
     p, ul, a, .credits{
-        color: #808080;
+        color: $darkGrayFont;
         list-style-type: none;
         letter-spacing: 1px;
     }
@@ -333,7 +352,7 @@ footer{
             width:120px;
             display:inline;
             height:18px;
-            border:1px solid #eee;
+            border:1px solid $lineColor;
             padding:2px 12px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -345,7 +364,7 @@ footer{
             padding:2px;
             margin:0;
             width:68px;
-            background-color: #000;
+            background-color: $darkBackgroundColor;
             color: $lightFont;
             display: inline;
             text-transform: uppercase;

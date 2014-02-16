@@ -12,6 +12,8 @@
 	<title>VE&#1071;B</title>
 	
 
+
+
 </head>
 <body>
 	
@@ -36,21 +38,48 @@
 		
 		
 	<section class="homeSlider">
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li>
+		      <img src="/static/img/home_slider_1.png" />
+		    </li>
+		    <li>
+		      <img src="/static/img/home_slider_2.png" />
+		    </li>
+		    <li>
+		      <img src="/static/img/home_slider_3.png" />
+		    </li>
+		    <li>
+		      <img src="/static/img/home_slider_1.png" />
+		    </li>
+		    <li>
+		      <img src="/static/img/home_slider_2.png" />
+		    </li>
+		    <li>
+		      <img src="/static/img/home_slider_3.png" />
+		    </li>
+		    <li>
+		      <img src="/static/img/home_slider_3.png" />
+		    </li>
+
+		  </ul>
+		</div>
+
 		<div class="sliderCaption">
 			<blockquote>
 				<p>&#8220;Donec auctor volutpat lorem, nec cursus augue congue ac. Curabitur malesuada lacinia lorem...&#8221;</p>
 			</blockquote>
 			<cite>Warren Moore</cite>
 		</div>
-		<p class="sliderImageSelect">
-			<span>1</span> |
-			<span>2</span> |
-			<span>3</span> |
-			<span>4</span> |
-			<span>5</span> |
-			<span>6</span> |
-			<span>7</span>
-		</p>
+		<ol class="sliderImageSelect">
+			<li>1 |</li>
+			<li>2 |</li>
+			<li>3 |</li>
+			<li>4 |</li>
+			<li>5 |</li>
+			<li>6 |</li>
+			<li>7</li>
+		</ul>
 	</section>
 	<section class="introduction">
 		<h2>Introduction</h2>
@@ -71,7 +100,7 @@
 						<h3>Verb Brands Update!</h3>
 						<p>Sign up to get the latest on sales, new releases and more...</p>
 						<form action="">
-							<input type="email" placeholder="email address">
+							<input type="email" placeholder="email address" required>
 							<input class="joinButton" type="submit" value="Join">
 						</form>
 					</div>
@@ -112,6 +141,18 @@
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="./static/js/main.js"></script>
+		
+	<link rel="stylesheet" href="/static/js/FlexSlider/flexslider.css" type="text/css">
+	<script src="/static/js/FlexSlider/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	manualControls: ".sliderImageSelect li",
+	    	animation: "slide",
+	    });
+	  });
+	</script>
+
 	
 </body>
 </html>
