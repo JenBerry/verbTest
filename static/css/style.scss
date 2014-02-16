@@ -8,14 +8,14 @@
 }
 @font-face
 {
-    font-family: 'proximanova';
+    font-family: 'proximanovaBold';
     src: url('/static/fonts/proximanova-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face
 {
-    font-family: 'proximanova';
+    font-family: 'proximanovaLight';
     src: url('/static/fonts/proximanova-light.ttf') format('truetype');
     font-weight: lighter;
     font-style: normal;
@@ -139,12 +139,12 @@ input, select {
 
 body{
     max-width: 1000px;
-    font-size: 10px;
+    font-size: 9px;
     margin: auto;
     position: relative;
 }
 header{
-    padding: 0 102px;
+    padding: 0 90px;
     position: absolute;
     top:0;
     right:0;
@@ -152,30 +152,30 @@ header{
     z-index: 2;
     color: $lightFont;
     text-transform: uppercase;
-    h1, .socialMedia{
-        width: 209px;
-    }
+
     h1{
         display: inline-block;
         padding-top: 30px;
+        padding-left: 12px;
+        float:left;
         img{
-            height: 30px;
+            height: 27px;
         }
     }
     nav{
         display: inline-block;
-        margin-bottom: 12px;
-        vertical-align: bottom;
+        margin: 37px 77px 0;
+        float:left;
         li{
-            margin: 0 7px;
-            letter-spacing: 1px;
+            margin: 0 8px;
+            letter-spacing: 2px;
         }
     }
     .socialMedia{
         display: inline-block;
         text-align: right;
-        margin-bottom: 12px;
-        vertical-align: bottom;
+        margin-top: 37px;
+        float:right;
         li{
             margin: 0 2px;
         }
@@ -201,22 +201,29 @@ header{
         right: 98px;
         blockquote{
             font-size: 22px;
+            line-height:1.3;
             margin-bottom: 11px;
+            font-family: proximanovaLight;
         }
         cite{
             text-transform: uppercase;
             font-style: normal;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
     }
     .sliderImageSelect{
         position: absolute;
         bottom: 20px;
         right: 50px;
+        font-size: 10px;
+        letter-spacing: 1px;
     }
 }
 .socialMedia{
     font-family: socialMedia;
+}
+.clear{
+    clear: both;
 }
 h2{
     text-transform: uppercase;
@@ -225,26 +232,23 @@ h2{
     letter-spacing: 4px;
 }
 .introduction{
-    height: 298px;
+    padding: 81px 110px 70px 113px;
     background-color: black;
     color: $lightFont;
     h2{
         
-        padding-left:113px;
-        padding-top: 83px;
         display:inline-block;
         float:left;
     }
     p{
         display: inline-block;
-        padding-top: 83px;
-        padding-right:113px;
         float:right;
-        width: 442px;
+        width: 433px;
         line-height: 2.5;
         font-size: 10px;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
         color: #b3b3b3;
+        font-family: proximanovaLight;
     }
 }
 .twitterFeed{
@@ -287,13 +291,21 @@ footer{
             height:100px;
             vertical-align: top;
             padding-top:22px;
-            line-height:1.5;
+            line-height:1.8;
             &.mailingList{
                 padding-left: 113px;
-                width: 217px;
+                width: 230px;
             }
-            &.moreInfoLinks, &.contact, &.socialMediaLinks{
-                padding-left: 60px;
+            &.moreInfoLinks{
+                padding-left: 78px;
+                width: 120px;
+            }
+            &.contact{
+                padding-left: 45px;
+                width: 120px;
+            }
+            &.socialMediaLinks{
+                padding-left: 66px;
                 width: 120px;
             }
         }
@@ -306,42 +318,60 @@ footer{
     }
     h3{
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         font-weight: normal;
+        font-family: proximanovaBold;
     }
     p, ul, a, .credits{
         color: #808080;
+        list-style-type: none;
+        letter-spacing: 1px;
     }
-    input{
-        width:140px;
-        display:inline;
-        height:18px;
-        border-width:1px;
-        padding:2px;
-    }
-    .joinButton{
-        height:23px;
-        border-width:1px;
-        padding:2px;
-        margin:0;
-        width:68px;
-        background-color: #000;
-        color: $lightFont;
-        display: inline;
-        text-transform: uppercase;
-        font-size:9px;
+    form{
+        margin-top:10px;
+        input{
+            width:120px;
+            display:inline;
+            height:18px;
+            border:1px solid #eee;
+            padding:2px 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 8px;
+        }
+        .joinButton{
+            height:23px;
+            border-width:1px;
+            padding:2px;
+            margin:0;
+            width:68px;
+            background-color: #000;
+            color: $lightFont;
+            display: inline;
+            text-transform: uppercase;
+            font-size:8px;
+            letter-spacing: 2px;
+            font-family: proximanovaBold;
+        }
     }
     .credits{
-        padding:20px 0;
+        padding:20px 113px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 8px;
     }
     .copyright{
         float:left;
+
     }
     .siteBy{
         float:right;
     }
     a{
         text-decoration: none;
+        &:hover{
+            color: $darkFont;
+        }
     }
 
 }
