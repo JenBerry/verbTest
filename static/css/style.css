@@ -97,76 +97,101 @@
                                   input, select {
                                     vertical-align: middle; }
 
-                                    body {
-                                      max-width: 1000px;
-                                      font-size: 9px;
-                                      margin: auto;
-                                      position: relative;
-                                      color: #808080; }
+                                    * {
+                                      outline: 1px solid gray !important; }
 
-                                      h1, h2, h3, header, cite {
-                                        text-transform: uppercase; }
+                                      body {
+                                        max-width: 1000px;
+                                        font-size: 9px;
+                                        margin: auto;
+                                        position: relative;
+                                        color: #808080; }
 
-                                        h2, h3 {
-                                          color: #4d4d4d; }
+                                        h1, h2, h3, header, cite {
+                                          text-transform: uppercase; }
 
-                                          h2 {
-                                            font-size: 18px;
-                                            font-weight: lighter;
-                                            letter-spacing: 4px; }
+                                          h2, h3 {
+                                            color: #4d4d4d; }
 
-                                            .socialMedia {
-                                              font-family: socialMedia; }
+                                            h2 {
+                                              font-size: 18px;
+                                              font-weight: lighter;
+                                              letter-spacing: 4px; }
 
-                                              .clear {
-                                                clear: both; }
+                                              .socialMedia {
+                                                font-family: socialMedia; }
 
-                                                .btn {
-                                                  background-color: #000;
-                                                  color: #fff;
-                                                  text-transform: uppercase;
-                                                  font-size: 8px;
-                                                  letter-spacing: 2px;
-                                                  font-family: proximanovaBold;
-                                                  cursor: pointer; }
+                                                .clear {
+                                                  clear: both; }
 
-                                                  header {
-                                                    padding: 0 90px;
-                                                    position: absolute;
-                                                    top: 0;
-                                                    right: 0;
-                                                    left: 0;
-                                                    z-index: 3;
-                                                    color: #fff; }
-                                                    header h1 {
-                                                      display: inline-block;
-                                                      padding-top: 30px;
-                                                      padding-left: 12px;
-                                                      float: left; }
-                                                      header h1 img {
-                                                        height: 27px; }
-                                                    header nav {
-                                                      display: inline-block;
-                                                      margin: 37px 77px 0;
-                                                      float: left; }
-                                                      header nav li {
-                                                        margin: 0 8px;
-                                                        letter-spacing: 2px; }
-                                                    header .socialMedia {
-                                                      display: inline-block;
-                                                      text-align: right;
-                                                      margin-top: 37px;
-                                                      float: right; }
-                                                      header .socialMedia li {
-                                                        margin: 0 2px; }
-                                                    header li {
-                                                      display: inline;
-                                                      list-style-type: none; }
-                                                      header li a {
-                                                        color: #fff;
-                                                        text-decoration: none; }
-                                                        header li a:hover {
-                                                          color: #b3b3b3; }
+                                                  .btn {
+                                                    background-color: #000;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    font-size: 8px;
+                                                    letter-spacing: 2px;
+                                                    font-family: proximanovaBold;
+                                                    cursor: pointer; }
+
+                                                    header {
+                                                      padding: 30px 9% 0;
+                                                      position: absolute;
+                                                      top: 0;
+                                                      right: 0;
+                                                      left: 0;
+                                                      z-index: 4;
+                                                      color: #fff; }
+                                                      header h1 {
+                                                        display: inline-block;
+                                                        padding-left: 1.2%;
+                                                        float: left; }
+                                                        header h1 img {
+                                                          height: 27px; }
+                                                      header nav {
+                                                        display: inline-block;
+                                                        margin: 7px 0 0 7.7%;
+                                                        float: left;
+                                                        text-align: center; }
+                                                        header nav li {
+                                                          margin: 0 8px;
+                                                          letter-spacing: 2px;
+                                                          display: inline-block; }
+                                                      header .menu {
+                                                        display: none; }
+                                                        header .socialMedia {
+                                                          display: inline-block;
+                                                          text-align: right;
+                                                          margin-top: 7px;
+                                                          float: right; }
+                                                          header .socialMedia li {
+                                                            margin: 0 2px; }
+                                                      header li {
+                                                        display: inline;
+                                                        list-style-type: none; }
+                                                        header li a {
+                                                          color: #fff;
+                                                          text-decoration: none; }
+                                                          header li a:hover {
+                                                            color: #b3b3b3; }
+                                                      @media (max-width: 768px) {
+                                                        header nav {
+                                                          display: none;
+                                                          background-color: #000;
+                                                          float: none;
+                                                          clear: both;
+                                                          margin: 0;   }
+                                                          header nav li {
+                                                            display: block;
+                                                            padding: 15px;   }
+                                                        header .menu {
+                                                          display: inline-block;
+                                                          float: left;
+                                                          letter-spacing: 2px;
+                                                          margin: 7px 0 0 7.7%;
+                                                          cursor: pointer;   }
+                                                          header .menu:hover {
+                                                            color: #b3b3b3;   }
+}
 
 .homeSlider {
   position: relative;
@@ -188,6 +213,13 @@
         .homeSlider .sliderCaption cite {
           font-style: normal;
           letter-spacing: 2px; }
+          @media (max-width: 768px) {
+            .homeSlider .sliderCaption {
+              position: static;
+              width: auto;
+              background-color: #4d4d4d;
+              padding: 10px 10%;   }
+}
   .homeSlider .sliderImageSelect {
     position: absolute;
     bottom: 20px;
@@ -204,7 +236,7 @@
         color: #b3b3b3; }
 
 .introduction {
-  padding: 81px 110px 70px 113px;
+  padding: 81px 11% 70px 11.3%;
   background-color: #000;
   color: #fff; }
   .introduction h2 {
@@ -214,17 +246,24 @@
     .introduction p {
       display: inline-block;
       float: right;
-      width: 433px;
+      width: 55.7%;
       line-height: 2.5;
       font-size: 10px;
       letter-spacing: 1.5px;
       color: #b3b3b3;
       font-family: proximanovaLight;
       margin-top: -8px; }
+      @media (max-width: 768px) {
+        .introduction p {
+          float: none;
+          width: 100%;
+          margin-top: 0;   }
+}
 
 .twitterFeed {
   height: 300px;
   background-image: url('/static/img/grass_background.png');
+  background-position: center;
   color: #fff;
   text-align: center; }
   .twitterFeed h2 {
@@ -250,7 +289,8 @@
 
 footer .moreInfo {
   border-top: 1px solid #efefef;
-  border-bottom: 1px solid #efefef; }
+  border-bottom: 1px solid #efefef;
+  padding: 0 11.3%; }
   footer .moreInfo div {
     display: inline-block;
     height: 100px;
@@ -258,17 +298,16 @@ footer .moreInfo {
     padding-top: 22px;
     line-height: 1.8; }
     footer .moreInfo div.mailingList {
-      padding-left: 113px;
-      width: 230px; }
+      width: 230px;
+      padding-right: 78px; }
       footer .moreInfo div.moreInfoLinks {
-        padding-left: 78px;
+        padding-right: 45px;
         width: 120px; }
         footer .moreInfo div.contact {
-          padding-left: 45px;
+          padding-right: 66px;
           width: 120px; }
           footer .moreInfo div.socialMediaLinks {
-            padding-left: 66px;
-            width: 120px; }
+            width: 65px; }
 footer .socialMedia li {
   display: inline;
   list-style-type: none;

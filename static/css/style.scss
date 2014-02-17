@@ -133,7 +133,7 @@ input, select {
 * end of reset styles
 */
 
-/* debugging *
+/* debugging */
 *{
     outline: 1px solid gray !important;
 }
@@ -175,18 +175,17 @@ h2{
     cursor: pointer;
 }
 header{
-    padding: 0 90px;
+    padding: 30px 9% 0;
     position: absolute;
     top:0;
     right:0;
     left:0;
-    z-index: 3;
+    z-index: 4;
     color: $lightFont;
 
     h1{
         display: inline-block;
-        padding-top: 30px;
-        padding-left: 12px;
+        padding-left: 1.2%;
         float:left;
         img{
             height: 27px;
@@ -194,17 +193,24 @@ header{
     }
     nav{
         display: inline-block;
-        margin: 37px 77px 0;
+        margin: 7px 0 0 7.7%;
         float:left;
+        text-align: center;
+
         li{
             margin: 0 8px;
             letter-spacing: 2px;
+            display: inline-block;
         }
     }
+    .menu{
+        display:none;
+    }
+
     .socialMedia{
         display: inline-block;
         text-align: right;
-        margin-top: 37px;
+        margin-top: 7px;
         float:right;
         li{
             margin: 0 2px;
@@ -221,10 +227,32 @@ header{
             }
         }
     }
+    @media (max-width: 768px){ //portrait tablets
+        nav{
+            display: none;
+            background-color: $darkBackgroundColor;
+            float: none;
+            clear: both;
+            margin: 0;
+            li{
+                display: block;
+                padding: 15px;
+            }
+        }
+        .menu{
+            display: inline-block;
+            float:left;
+            letter-spacing: 2px;
+            margin: 7px 0 0 7.7%;
+            cursor: pointer;
+            &:hover{
+                color: $lightGrayFont;
+            }
+        }
+    }
 }
 .homeSlider{
     position: relative;
-    //background-image: url('/static/img/home_slider_1.png');
     color: $lightFont;
     .flexslider{
         border:0;
@@ -246,6 +274,12 @@ header{
             font-style: normal;
             letter-spacing: 2px;
         }
+        @media (max-width: 768px){ //portrait tablets
+            position: static;
+            width: auto;
+            background-color: $darkGrayFont;
+            padding: 10px 10%;
+        }
     }
     .sliderImageSelect{
         position: absolute;
@@ -266,7 +300,7 @@ header{
 }
 
 .introduction{
-    padding: 81px 110px 70px 113px;
+    padding: 81px 11% 70px 11.3%;
     background-color: $darkBackgroundColor;
     color: $lightFont;
     h2{
@@ -278,7 +312,7 @@ header{
     p{
         display: inline-block;
         float:right;
-        width: 433px;
+        width: 55.7%;
         line-height: 2.5;
         font-size: 10px;
         letter-spacing: 1.5px;
@@ -286,10 +320,19 @@ header{
         font-family: proximanovaLight;
         margin-top: -8px
     }
+
+    @media (max-width: 768px){ //portrait tablets
+        p{
+            float:none;
+            width: 100%;
+            margin-top:0;
+        }
+    }
 }
 .twitterFeed{
     height:300px;
     background-image: url('/static/img/grass_background.png');
+    background-position: center;
     color: $lightFont;
     text-align: center;
     h2{
@@ -323,6 +366,7 @@ footer{
     .moreInfo{
         border-top: 1px solid $lineColor;
         border-bottom: 1px solid $lineColor;
+        padding: 0 11.3%;
         div{
             display: inline-block;
             height:100px;
@@ -330,20 +374,19 @@ footer{
             padding-top:22px;
             line-height:1.8;
             &.mailingList{
-                padding-left: 113px;
                 width: 230px;
+                padding-right: 78px
             }
             &.moreInfoLinks{
-                padding-left: 78px;
+                padding-right: 45px;
                 width: 120px;
             }
             &.contact{
-                padding-left: 45px;
+                padding-right: 66px;
                 width: 120px;
             }
             &.socialMediaLinks{
-                padding-left: 66px;
-                width: 120px;
+                width: 65px;
             }
         }
     }
@@ -476,7 +519,7 @@ footer{
                 margin: 17px 0;
             }
         }
-        @media (max-width: 640px)
+        @media (max-width: 640px) //smartphones
         {
             form{
                 float: none;
