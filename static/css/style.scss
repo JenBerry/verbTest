@@ -133,7 +133,7 @@ input, select {
 * end of reset styles
 */
 
-/* debugging */
+/* debugging *
 *{
     outline: 1px solid gray !important;
 }
@@ -430,10 +430,11 @@ footer{
         margin: auto;
     }
     .contentContainer{
-        margin: 65px 90px 0;
+        margin: 65px 9% 0;
         .contactInfo{
             float:left;
             width: 35%;
+            min-width:150px;
             text-align: left;
             ul{
                 list-style-type:none;
@@ -451,28 +452,41 @@ footer{
         }
         form{
             float:right;
-            width:64%
-        }
-        input{
-            display: block;
-            width: 92%;
-            height:10px;
-            border: 1px solid $lineColor;
-            padding: 10px 4%;
-            margin-bottom: 17px;
-            &.send{
-                height: 36px;
-                width: 91px;
-                float:right;
-                font-size: 10px;
+            width:64%;
+
+            input{
+                display: block;
+                width: 92%;
+                height:10px;
+                border: 1px solid $lineColor;
+                padding: 10px 4%;
+                margin-bottom: 17px;
+                &.send{
+                    height: 36px;
+                    width: 91px;
+                    float:right;
+                    font-size: 10px;
+                }
+            }
+            textarea{
+                display: block;
+                width: 92%;
+                border: 1px solid $lineColor;
+                padding: 10px 4%;
+                margin: 17px 0;
             }
         }
-        textarea{
-            display: block;
-            width: 92%;
-            border: 1px solid $lineColor;
-            padding: 10px 4%;
-            margin: 17px 0;
+        @media (max-width: 640px)
+        {
+            form{
+                float: none;
+                margin: auto;
+                width: 100%;
+            }
+            .contactInfo{
+                float:none;
+                margin: auto;
+            }
         }
     }
 
@@ -504,3 +518,4 @@ footer{
         }
     }
 }
+

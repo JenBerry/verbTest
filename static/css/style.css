@@ -97,79 +97,76 @@
                                   input, select {
                                     vertical-align: middle; }
 
-                                    * {
-                                      outline: 1px solid gray !important; }
+                                    body {
+                                      max-width: 1000px;
+                                      font-size: 9px;
+                                      margin: auto;
+                                      position: relative;
+                                      color: #808080; }
 
-                                      body {
-                                        max-width: 1000px;
-                                        font-size: 9px;
-                                        margin: auto;
-                                        position: relative;
-                                        color: #808080; }
+                                      h1, h2, h3, header, cite {
+                                        text-transform: uppercase; }
 
-                                        h1, h2, h3, header, cite {
-                                          text-transform: uppercase; }
+                                        h2, h3 {
+                                          color: #4d4d4d; }
 
-                                          h2, h3 {
-                                            color: #4d4d4d; }
+                                          h2 {
+                                            font-size: 18px;
+                                            font-weight: lighter;
+                                            letter-spacing: 4px; }
 
-                                            h2 {
-                                              font-size: 18px;
-                                              font-weight: lighter;
-                                              letter-spacing: 4px; }
+                                            .socialMedia {
+                                              font-family: socialMedia; }
 
-                                              .socialMedia {
-                                                font-family: socialMedia; }
+                                              .clear {
+                                                clear: both; }
 
-                                                .clear {
-                                                  clear: both; }
+                                                .btn {
+                                                  background-color: #000;
+                                                  color: #fff;
+                                                  text-transform: uppercase;
+                                                  font-size: 8px;
+                                                  letter-spacing: 2px;
+                                                  font-family: proximanovaBold;
+                                                  cursor: pointer; }
 
-                                                  .btn {
-                                                    background-color: #000;
-                                                    color: #fff;
-                                                    text-transform: uppercase;
-                                                    font-size: 8px;
-                                                    letter-spacing: 2px;
-                                                    font-family: proximanovaBold;
-                                                    cursor: pointer; }
-
-                                                    header {
-                                                      padding: 0 90px;
-                                                      position: absolute;
-                                                      top: 0;
-                                                      right: 0;
-                                                      left: 0;
-                                                      z-index: 3;
-                                                      color: #fff; }
-                                                      header h1 {
-                                                        display: inline-block;
-                                                        padding-top: 30px;
-                                                        padding-left: 12px;
-                                                        float: left; }
-                                                        header h1 img {
-                                                          height: 27px; }
-                                                      header nav {
-                                                        display: inline-block;
-                                                        margin: 37px 77px 0;
-                                                        float: left; }
-                                                        header nav li {
-                                                          margin: 0 8px;
-                                                          letter-spacing: 2px; }
-                                                      header .socialMedia {
-                                                        display: inline-block;
-                                                        text-align: right;
-                                                        margin-top: 37px;
-                                                        float: right; }
-                                                        header .socialMedia li {
-                                                          margin: 0 2px; }
-                                                      header li {
-                                                        display: inline;
-                                                        list-style-type: none; }
-                                                        header li a {
-                                                          color: #fff;
-                                                          text-decoration: none; }
-                                                          header li a:hover {
-                                                            color: #b3b3b3; }
+                                                  header {
+                                                    padding: 0 90px;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    left: 0;
+                                                    z-index: 3;
+                                                    color: #fff; }
+                                                    header h1 {
+                                                      display: inline-block;
+                                                      padding-top: 30px;
+                                                      padding-left: 12px;
+                                                      float: left; }
+                                                      header h1 img {
+                                                        height: 27px; }
+                                                    header nav {
+                                                      display: inline-block;
+                                                      margin: 37px 77px 0;
+                                                      float: left; }
+                                                      header nav li {
+                                                        margin: 0 8px;
+                                                        letter-spacing: 2px; }
+                                                    header .socialMedia {
+                                                      display: inline-block;
+                                                      text-align: right;
+                                                      margin-top: 37px;
+                                                      float: right; }
+                                                      header .socialMedia li {
+                                                        margin: 0 2px; }
+                                                    header li {
+                                                      display: inline;
+                                                      list-style-type: none; }
+                                                      header li a {
+                                                        color: #fff;
+                                                        text-decoration: none; }
+                                                        header li a:hover {
+                                                          color: #b3b3b3; }
 
 .homeSlider {
   position: relative;
@@ -334,10 +331,11 @@ footer .credits {
         width: 90px;
         margin: auto; }
         .pageContent .contentContainer {
-          margin: 65px 90px 0; }
+          margin: 65px 9% 0; }
           .pageContent .contentContainer .contactInfo {
             float: left;
             width: 35%;
+            min-width: 150px;
             text-align: left; }
             .pageContent .contentContainer .contactInfo ul {
               list-style-type: none; }
@@ -352,24 +350,33 @@ footer .credits {
           .pageContent .contentContainer form {
             float: right;
             width: 64%; }
-            .pageContent .contentContainer input {
+            .pageContent .contentContainer form input {
               display: block;
               width: 92%;
               height: 10px;
               border: 1px solid #efefef;
               padding: 10px 4%;
               margin-bottom: 17px; }
-              .pageContent .contentContainer input.send {
+              .pageContent .contentContainer form input.send {
                 height: 36px;
                 width: 91px;
                 float: right;
                 font-size: 10px; }
-          .pageContent .contentContainer textarea {
-            display: block;
-            width: 92%;
-            border: 1px solid #efefef;
-            padding: 10px 4%;
-            margin: 17px 0; }
+            .pageContent .contentContainer form textarea {
+              display: block;
+              width: 92%;
+              border: 1px solid #efefef;
+              padding: 10px 4%;
+              margin: 17px 0; }
+          @media (max-width: 640px) {
+            .pageContent .contentContainer form {
+              float: none;
+              margin: auto;
+              width: 100%;   }
+              .pageContent .contentContainer .contactInfo {
+                float: none;
+                margin: auto;   }
+}
 
 .headingPage {
   background-image: url('/static/img/heading_background.png');
