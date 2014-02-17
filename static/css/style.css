@@ -97,75 +97,79 @@
                                   input, select {
                                     vertical-align: middle; }
 
-                                    body {
-                                      max-width: 1000px;
-                                      font-size: 9px;
-                                      margin: auto;
-                                      position: relative;
-                                      color: #808080; }
+                                    * {
+                                      outline: 1px solid gray !important; }
 
-                                      h1, h2, h3, header, cite {
-                                        text-transform: uppercase; }
+                                      body {
+                                        max-width: 1000px;
+                                        font-size: 9px;
+                                        margin: auto;
+                                        position: relative;
+                                        color: #808080; }
 
-                                        h2, h3 {
-                                          color: #4d4d4d; }
+                                        h1, h2, h3, header, cite {
+                                          text-transform: uppercase; }
 
-                                          h2 {
-                                            font-size: 18px;
-                                            font-weight: lighter;
-                                            letter-spacing: 4px; }
+                                          h2, h3 {
+                                            color: #4d4d4d; }
 
-                                            .socialMedia {
-                                              font-family: socialMedia; }
+                                            h2 {
+                                              font-size: 18px;
+                                              font-weight: lighter;
+                                              letter-spacing: 4px; }
 
-                                              .clear {
-                                                clear: both; }
+                                              .socialMedia {
+                                                font-family: socialMedia; }
 
-                                                .btn {
-                                                  background-color: #000;
-                                                  color: #fff;
-                                                  text-transform: uppercase;
-                                                  font-size: 8px;
-                                                  letter-spacing: 2px;
-                                                  font-family: proximanovaBold; }
+                                                .clear {
+                                                  clear: both; }
 
-                                                  header {
-                                                    padding: 0 90px;
-                                                    position: absolute;
-                                                    top: 0;
-                                                    right: 0;
-                                                    left: 0;
-                                                    z-index: 3;
-                                                    color: #fff; }
-                                                    header h1 {
-                                                      display: inline-block;
-                                                      padding-top: 30px;
-                                                      padding-left: 12px;
-                                                      float: left; }
-                                                      header h1 img {
-                                                        height: 27px; }
-                                                    header nav {
-                                                      display: inline-block;
-                                                      margin: 37px 77px 0;
-                                                      float: left; }
-                                                      header nav li {
-                                                        margin: 0 8px;
-                                                        letter-spacing: 2px; }
-                                                    header .socialMedia {
-                                                      display: inline-block;
-                                                      text-align: right;
-                                                      margin-top: 37px;
-                                                      float: right; }
-                                                      header .socialMedia li {
-                                                        margin: 0 2px; }
-                                                    header li {
-                                                      display: inline;
-                                                      list-style-type: none; }
-                                                      header li a {
-                                                        color: #fff;
-                                                        text-decoration: none; }
-                                                        header li a:hover {
-                                                          color: #b3b3b3; }
+                                                  .btn {
+                                                    background-color: #000;
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    font-size: 8px;
+                                                    letter-spacing: 2px;
+                                                    font-family: proximanovaBold;
+                                                    cursor: pointer; }
+
+                                                    header {
+                                                      padding: 0 90px;
+                                                      position: absolute;
+                                                      top: 0;
+                                                      right: 0;
+                                                      left: 0;
+                                                      z-index: 3;
+                                                      color: #fff; }
+                                                      header h1 {
+                                                        display: inline-block;
+                                                        padding-top: 30px;
+                                                        padding-left: 12px;
+                                                        float: left; }
+                                                        header h1 img {
+                                                          height: 27px; }
+                                                      header nav {
+                                                        display: inline-block;
+                                                        margin: 37px 77px 0;
+                                                        float: left; }
+                                                        header nav li {
+                                                          margin: 0 8px;
+                                                          letter-spacing: 2px; }
+                                                      header .socialMedia {
+                                                        display: inline-block;
+                                                        text-align: right;
+                                                        margin-top: 37px;
+                                                        float: right; }
+                                                        header .socialMedia li {
+                                                          margin: 0 2px; }
+                                                      header li {
+                                                        display: inline;
+                                                        list-style-type: none; }
+                                                        header li a {
+                                                          color: #fff;
+                                                          text-decoration: none; }
+                                                          header li a:hover {
+                                                            color: #b3b3b3; }
 
 .homeSlider {
   position: relative;
@@ -218,7 +222,8 @@
       font-size: 10px;
       letter-spacing: 1.5px;
       color: #b3b3b3;
-      font-family: proximanovaLight; }
+      font-family: proximanovaLight;
+      margin-top: -8px; }
 
 .twitterFeed {
   height: 300px;
@@ -318,7 +323,7 @@ footer .credits {
 
   .pageContent {
     text-align: center;
-    padding: 48px 69px 67px; }
+    padding: 48px 6.9% 67px; }
     .pageContent > p {
       width: 55%;
       padding: 31px 0 21px;
@@ -374,13 +379,16 @@ footer .credits {
     padding-top: 30px;
     padding-bottom: 40px; }
     .articalContainer .mainArticals {
-      float: left;
-      width: 50%;
-      padding: 42px 0 0; }
+      padding: 42px 0 0;
+      width: 49.8%;
+      min-width: 290px;
+      display: inline-block; }
       .articalContainer .mainArticals img {
         height: 48px; }
         .articalContainer .mainArticals p {
           line-height: 2.5;
           letter-spacing: 1px;
           text-align: left;
-          padding: 38px 73px 0; }
+          padding: 38px 0 0;
+          width: 285px;
+          margin: auto; }

@@ -133,7 +133,7 @@ input, select {
 * end of reset styles
 */
 
-/* debugging *
+/* debugging */
 *{
     outline: 1px solid gray !important;
 }
@@ -172,6 +172,7 @@ h2{
     font-size:8px;
     letter-spacing: 2px;
     font-family: proximanovaBold;
+    cursor: pointer;
 }
 header{
     padding: 0 90px;
@@ -283,6 +284,7 @@ header{
         letter-spacing: 1.5px;
         color: $lightGrayFont;
         font-family: proximanovaLight;
+        margin-top: -8px
     }
 }
 .twitterFeed{
@@ -415,7 +417,7 @@ footer{
 }
 .pageContent{
     text-align: center;
-    padding: 48px 69px 67px;
+    padding: 48px 6.9% 67px;
     &>p{
         width:55%;
         padding: 31px 0 21px;
@@ -485,9 +487,10 @@ footer{
     padding-top: 30px;
     padding-bottom: 40px;
     .mainArticals{
-        float:left;
-        width: 50%;
         padding: 42px 0 0;
+        width: 49.8%;
+        min-width: 290px;
+        display: inline-block;
         img{
             height: 48px;
         }
@@ -495,7 +498,9 @@ footer{
             line-height: 2.5;
             letter-spacing: 1px;
             text-align: left;
-            padding: 38px 73px 0;
+            padding: 38px 0 0;
+            width:285px;
+            margin:auto;
         }
     }
 }
