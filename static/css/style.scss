@@ -65,7 +65,6 @@ time, mark, audio, video {
 }
 body {
     line-height:1;
-    font-family: proximanova;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -94,34 +93,34 @@ a {
 }
 
 /* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-del {
-    text-decoration: line-through;
-}
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
+// ins {
+//     background-color:#ff9;
+//     color:#000;
+//     text-decoration:none;
+// }
+// /* change colours to suit your needs */
+// mark {
+//     background-color:#ff9;
+//     color:#000;
+//     font-style:italic;
+//     font-weight:bold;
+// }
+// del {
+//     text-decoration: line-through;
+// }
+// abbr[title], dfn[title] {
+//     border-bottom:1px dotted;
+//     cursor:help;
+// }
+// table {
+//     border-collapse:collapse;
+//     border-spacing:0;
+// }
 hr {
     display:block;
     height:1px;
     border:0;
-    border-top:1px solid #eee;
+    border-top:1px solid $lineColor;
     margin:1em 0;
     padding:0;
 }
@@ -133,13 +132,11 @@ input, select {
 * end of reset styles
 */
 
-/* debugging */
+/* debugging *
 *{
     outline: 1px solid gray !important;
 }
 /**/
-
-
 
 body{
     max-width: 1000px;
@@ -147,6 +144,7 @@ body{
     margin: auto;
     position: relative;
     color: $midGrayFont;
+    font-family: proximanova;
 }
 h1, h2, h3, header, cite{
     text-transform: uppercase;
@@ -174,8 +172,9 @@ h2{
     font-family: proximanovaBold;
     cursor: pointer;
 }
+
 header{
-    padding: 30px 9% 0;
+    padding: 30px 9% 30px;
     position: absolute;
     top:0;
     right:0;
@@ -183,6 +182,16 @@ header{
     z-index: 4;
     color: $lightFont;
 
+    @media (max-width: 768px)
+    {
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
     h1{
         display: inline-block;
         padding-left: 1.2%;
@@ -245,124 +254,17 @@ header{
             letter-spacing: 2px;
             margin: 7px 0 0 7.7%;
             cursor: pointer;
+            //background-color: $darkBackgroundColor;
+            //padding: 7px;
             &:hover{
                 color: $lightGrayFont;
             }
         }
     }
 }
-.homeSlider{
-    position: relative;
-    color: $lightFont;
-    .flexslider{
-        border:0;
-        margin: 0;
-    }
-    .sliderCaption{
-        z-index: 3;
-        position: absolute;
-        width:347px;
-        bottom: 49px;
-        right: 98px;
-        blockquote{
-            font-size: 22px;
-            line-height:1.3;
-            margin-bottom: 11px;
-            font-family: proximanovaLight;
-        }
-        cite{
-            font-style: normal;
-            letter-spacing: 2px;
-        }
-        @media (max-width: 768px){ //portrait tablets
-            position: static;
-            width: auto;
-            background-color: $darkGrayFont;
-            padding: 10px 10%;
-        }
-    }
-    .sliderImageSelect{
-        position: absolute;
-        bottom: 20px;
-        right: 50px;
-        font-size: 10px;
-        letter-spacing: 1px;
-        list-style-type: none;
-        z-index: 3;
-        li{
-            display: inline;
-            cursor: pointer;
-            &:hover, &.flex-active{
-                color: $lightGrayFont;
-            }
-        }
-    }
-}
-
-.introduction{
-    padding: 81px 11% 70px 11.3%;
-    background-color: $darkBackgroundColor;
-    color: $lightFont;
-    h2{
-        
-        display:inline-block;
-        float:left;
-        color: $lightFont;
-    }
-    p{
-        display: inline-block;
-        float:right;
-        width: 55.7%;
-        line-height: 2.5;
-        font-size: 10px;
-        letter-spacing: 1.5px;
-        color: $lightGrayFont;
-        font-family: proximanovaLight;
-        margin-top: -8px
-    }
-
-    @media (max-width: 768px){ //portrait tablets
-        p{
-            float:none;
-            width: 100%;
-            margin-top:0;
-        }
-    }
-}
-.twitterFeed{
-    height:300px;
-    background-image: url('/static/img/grass_background.png');
-    background-position: center;
-    color: $lightFont;
-    text-align: center;
-    h2{
-        padding-top: 60px;
-        color: $lightFont;
-    }
-    blockquote{
-        width: 350px;
-        margin:auto;
-        letter-spacing: 2px;
-        font-size: 24px;
-        line-height: 1.5;
-        padding-top: 63px;
-        display:inline-block;
-    }
-    .openQuote, .closeQuote{
-        display:inline-block;
-        font-size:65px
-    }
-    .openQuote{
-        position: relative;
-        top:-30px
-    }
-    .closeQuote{
-        position: relative;
-        bottom: -40px;
-    }
-}
 
 footer{
+    padding-bottom: 20px;
     .moreInfo{
         border-top: 1px solid $lineColor;
         border-bottom: 1px solid $lineColor;
@@ -431,7 +333,7 @@ footer{
     }
 
     .credits{
-        padding:20px 113px;
+        padding:20px 11.3%;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: 8px;
@@ -452,12 +354,140 @@ footer{
 
 }
 
-/* contact page */
-
-.contactPage{
-    background-image: url('/static/img/grass_contact_background.png');
-    height: 356px;
+/* home page */
+.homeSlider{
+    position: relative;
+    color: $lightFont;
+    .flexslider{
+        border:0;
+        margin: 0;
+    }
+    .sliderCaption{
+        z-index: 3;
+        position: absolute;
+        width:347px;
+        bottom: 49px;
+        right: 98px;
+        blockquote{
+            font-size: 22px;
+            line-height:1.3;
+            margin-bottom: 11px;
+            font-family: proximanovaLight;
+        }
+        cite{
+            font-style: normal;
+            letter-spacing: 2px;
+        }
+        @media (max-width: 768px){ //portrait tablets
+            position: static;
+            width: auto;
+            background-color: $darkGrayFont;
+            padding: 10px 10%;
+            blockquote{
+                font-size: 16px;
+            }
+        }
+    }
+    .sliderImageSelect{
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+        font-size: 10px;
+        letter-spacing: 1px;
+        list-style-type: none;
+        z-index: 3;
+        li{
+            display: inline;
+            cursor: pointer;
+            &:hover, &.flex-active{
+                color: $lightGrayFont;
+            }
+        }
+    }
 }
+
+.introduction{
+    padding: 81px 11% 70px 11.3%;
+    background-color: $darkBackgroundColor;
+    color: $lightFont;
+    h2{
+        
+        display:inline-block;
+        float:left;
+        color: $lightFont;
+    }
+    p{
+        display: inline-block;
+        float:right;
+        width: 55.7%;
+        line-height: 2.5;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        color: $lightGrayFont;
+        font-family: proximanovaLight;
+        margin-top: -8px
+    }
+
+    @media (max-width: 768px){ //portrait tablets
+        p{
+            float:none;
+            width: 100%;
+            margin-top:24px;
+        }
+    }
+}
+.twitterFeed{
+    height:300px;
+    background-image: url('/static/img/grass_background.png');
+    background-position: center;
+    color: $lightFont;
+    text-align: center;
+    h2{
+        padding-top: 60px;
+        color: $lightFont;
+        padding-bottom: 63px;
+    }
+    blockquote{
+        width: 350px;
+        margin:auto;
+        letter-spacing: 2px;
+        font-size: 24px;
+        line-height: 1.5;
+        display:inline-block;
+    }
+    .openQuote, .closeQuote{
+        display:inline-block;
+        font-size:65px
+    }
+    .openQuote{
+        position: relative;
+        top:-30px
+    }
+    .closeQuote{
+        position: relative;
+        bottom: -40px;
+    }
+    @media (max-width: 640px){ //smartphones
+        .openQuote, .closeQuote{
+            display: inline;
+            font-size: 24px;
+            position: static;
+        }
+        blockquote{
+            display: inline;
+        }
+    }
+}
+
+
+
+/* other pages */
+.headerBackground{
+    img{
+        width: 100%;
+    }
+}
+
 .pageContent{
     text-align: center;
     padding: 48px 6.9% 67px;
@@ -472,74 +502,70 @@ footer{
         width: 90px;
         margin: auto;
     }
-    .contentContainer{
-        margin: 65px 9% 0;
-        .contactInfo{
-            float:left;
-            width: 35%;
-            min-width:150px;
-            text-align: left;
-            ul{
-                list-style-type:none;
-            }
-            h3{
-                letter-spacing: 4px;
-                font-family: proximanovaLight
-            }
-            ul{
-                padding: 10px 0 35px;
-                line-height: 1.5;
-                font-size: 11px;
-                letter-spacing: 1px
-            }
-        }
-        form{
-            float:right;
-            width:64%;
+}
 
-            input{
-                display: block;
-                width: 92%;
-                height:10px;
-                border: 1px solid $lineColor;
-                padding: 10px 4%;
-                margin-bottom: 17px;
-                &.send{
-                    height: 36px;
-                    width: 91px;
-                    float:right;
-                    font-size: 10px;
-                }
-            }
-            textarea{
-                display: block;
-                width: 92%;
-                border: 1px solid $lineColor;
-                padding: 10px 4%;
-                margin: 17px 0;
-            }
+/* contact page */
+.contentContainer{
+    margin: 65px 9% 0;
+    .contactInfo{
+        float:left;
+        width: 35%;
+        min-width:150px;
+        text-align: left;
+        ul{
+            list-style-type:none;
         }
-        @media (max-width: 640px) //smartphones
-        {
-            form{
-                float: none;
-                margin: auto;
-                width: 100%;
-            }
-            .contactInfo{
-                float:none;
-                margin: auto;
-            }
+        h3{
+            letter-spacing: 4px;
+            font-family: proximanovaLight
+        }
+        ul{
+            padding: 10px 0 35px;
+            line-height: 1.5;
+            font-size: 11px;
+            letter-spacing: 1px
         }
     }
+    form{
+        float:right;
+        width:64%;
 
+        input{
+            display: block;
+            width: 92%;
+            height:10px;
+            border: 1px solid $lineColor;
+            padding: 10px 4%;
+            margin-bottom: 17px;
+            &.send{
+                height: 36px;
+                width: 91px;
+                float:right;
+                font-size: 10px;
+            }
+        }
+        textarea{
+            display: block;
+            width: 92%;
+            border: 1px solid $lineColor;
+            padding: 10px 4%;
+            margin: 17px 0;
+        }
+    }
+    @media (max-width: 640px) //smartphones
+    {
+        form{
+            float: none;
+            margin: auto;
+            width: 100%;
+        }
+        .contactInfo{
+            float:none;
+        }
+    }
 }
 
 /* heading pages */
-.headingPage{
-    background-image: url('/static/img/heading_background.png');
-    height: 439px;
-}
 .articalContainer{
     padding-top: 30px;
     padding-bottom: 40px;
