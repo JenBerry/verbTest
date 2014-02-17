@@ -312,56 +312,75 @@ footer .credits {
         footer a:hover {
           color: #000; }
 
-.headerBackground {
-  height: 356px;
-  background-image: url('/static/img/grass_contact_background.png'); }
+.contactPage {
+  background-image: url('/static/img/grass_contact_background.png');
+  height: 356px; }
 
-  .contactDetails {
+  .pageContent {
     text-align: center;
-    padding: 47px 158px 67px; }
-    .contactDetails > p {
-      width: 480px;
+    padding: 48px 69px 67px; }
+    .pageContent > p {
+      width: 55%;
       padding: 31px 0 21px;
       margin: auto;
       font-size: 12px;
       line-height: 2; }
-      .contactDetails hr {
+      .pageContent hr {
         width: 90px;
         margin: auto; }
-        .contactDetails .contactContainer {
-          margin-top: 65px; }
-          .contactDetails .contactContainer .contactInfo {
+        .pageContent .contentContainer {
+          margin: 65px 90px 0; }
+          .pageContent .contentContainer .contactInfo {
             float: left;
             width: 35%;
             text-align: left; }
-            .contactDetails .contactContainer .contactInfo ul {
+            .pageContent .contentContainer .contactInfo ul {
               list-style-type: none; }
-              .contactDetails .contactContainer .contactInfo h3 {
+              .pageContent .contentContainer .contactInfo h3 {
                 letter-spacing: 4px;
                 font-family: proximanovaLight; }
-                .contactDetails .contactContainer .contactInfo ul {
+                .pageContent .contentContainer .contactInfo ul {
                   padding: 10px 0 35px;
                   line-height: 1.5;
                   font-size: 11px;
                   letter-spacing: 1px; }
-          .contactDetails .contactContainer form {
+          .pageContent .contentContainer form {
             float: right;
             width: 64%; }
-            .contactDetails .contactContainer input {
+            .pageContent .contentContainer input {
               display: block;
               width: 92%;
               height: 10px;
               border: 1px solid #efefef;
               padding: 10px 4%;
               margin-bottom: 17px; }
-              .contactDetails .contactContainer input.send {
+              .pageContent .contentContainer input.send {
                 height: 36px;
                 width: 91px;
                 float: right;
                 font-size: 10px; }
-          .contactDetails .contactContainer textarea {
+          .pageContent .contentContainer textarea {
             display: block;
             width: 92%;
             border: 1px solid #efefef;
             padding: 10px 4%;
             margin: 17px 0; }
+
+.headingPage {
+  background-image: url('/static/img/heading_background.png');
+  height: 439px; }
+
+  .articalContainer {
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    .articalContainer .mainArticals {
+      float: left;
+      width: 50%;
+      padding: 42px 0 0; }
+      .articalContainer .mainArticals img {
+        height: 48px; }
+        .articalContainer .mainArticals p {
+          line-height: 2.5;
+          letter-spacing: 1px;
+          text-align: left;
+          padding: 38px 73px 0; }

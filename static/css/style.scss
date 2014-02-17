@@ -408,15 +408,16 @@ footer{
 }
 
 /* contact page */
-.headerBackground{
+
+.contactPage{
+    background-image: url('/static/img/grass_contact_background.png');
     height: 356px;
-    background-image: url('/static/img/grass_contact_background.png')
 }
-.contactDetails{
+.pageContent{
     text-align: center;
-    padding: 47px 158px 67px;
+    padding: 48px 69px 67px;
     &>p{
-        width:480px;
+        width:55%;
         padding: 31px 0 21px;
         margin: auto;
         font-size: 12px;
@@ -426,8 +427,8 @@ footer{
         width: 90px;
         margin: auto;
     }
-    .contactContainer{
-        margin-top: 65px;
+    .contentContainer{
+        margin: 65px 90px 0;
         .contactInfo{
             float:left;
             width: 35%;
@@ -473,4 +474,28 @@ footer{
         }
     }
 
+}
+
+/* heading pages */
+.headingPage{
+    background-image: url('/static/img/heading_background.png');
+    height: 439px;
+}
+.articalContainer{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    .mainArticals{
+        float:left;
+        width: 50%;
+        padding: 42px 0 0;
+        img{
+            height: 48px;
+        }
+        p{
+            line-height: 2.5;
+            letter-spacing: 1px;
+            text-align: left;
+            padding: 38px 73px 0;
+        }
+    }
 }
