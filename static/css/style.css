@@ -101,46 +101,71 @@
                                       max-width: 1000px;
                                       font-size: 9px;
                                       margin: auto;
-                                      position: relative; }
+                                      position: relative;
+                                      color: #808080; }
 
-                                      header {
-                                        padding: 0 90px;
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        left: 0;
-                                        z-index: 3;
-                                        color: #fff;
+                                      h1, h2, h3, header, cite {
                                         text-transform: uppercase; }
-                                        header h1 {
-                                          display: inline-block;
-                                          padding-top: 30px;
-                                          padding-left: 12px;
-                                          float: left; }
-                                          header h1 img {
-                                            height: 27px; }
-                                        header nav {
-                                          display: inline-block;
-                                          margin: 37px 77px 0;
-                                          float: left; }
-                                          header nav li {
-                                            margin: 0 8px;
-                                            letter-spacing: 2px; }
-                                        header .socialMedia {
-                                          display: inline-block;
-                                          text-align: right;
-                                          margin-top: 37px;
-                                          float: right; }
-                                          header .socialMedia li {
-                                            margin: 0 2px; }
-                                        header li {
-                                          display: inline;
-                                          list-style-type: none; }
-                                          header li a {
-                                            color: #fff;
-                                            text-decoration: none; }
-                                            header li a:hover {
-                                              color: #b3b3b3; }
+
+                                        h2, h3 {
+                                          color: #4d4d4d; }
+
+                                          h2 {
+                                            font-size: 18px;
+                                            font-weight: lighter;
+                                            letter-spacing: 4px; }
+
+                                            .socialMedia {
+                                              font-family: socialMedia; }
+
+                                              .clear {
+                                                clear: both; }
+
+                                                .btn {
+                                                  background-color: #000;
+                                                  color: #fff;
+                                                  text-transform: uppercase;
+                                                  font-size: 8px;
+                                                  letter-spacing: 2px;
+                                                  font-family: proximanovaBold; }
+
+                                                  header {
+                                                    padding: 0 90px;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    right: 0;
+                                                    left: 0;
+                                                    z-index: 3;
+                                                    color: #fff; }
+                                                    header h1 {
+                                                      display: inline-block;
+                                                      padding-top: 30px;
+                                                      padding-left: 12px;
+                                                      float: left; }
+                                                      header h1 img {
+                                                        height: 27px; }
+                                                    header nav {
+                                                      display: inline-block;
+                                                      margin: 37px 77px 0;
+                                                      float: left; }
+                                                      header nav li {
+                                                        margin: 0 8px;
+                                                        letter-spacing: 2px; }
+                                                    header .socialMedia {
+                                                      display: inline-block;
+                                                      text-align: right;
+                                                      margin-top: 37px;
+                                                      float: right; }
+                                                      header .socialMedia li {
+                                                        margin: 0 2px; }
+                                                    header li {
+                                                      display: inline;
+                                                      list-style-type: none; }
+                                                      header li a {
+                                                        color: #fff;
+                                                        text-decoration: none; }
+                                                        header li a:hover {
+                                                          color: #b3b3b3; }
 
 .homeSlider {
   position: relative;
@@ -160,7 +185,6 @@
         margin-bottom: 11px;
         font-family: proximanovaLight; }
         .homeSlider .sliderCaption cite {
-          text-transform: uppercase;
           font-style: normal;
           letter-spacing: 2px; }
   .homeSlider .sliderImageSelect {
@@ -178,34 +202,23 @@
       .homeSlider .sliderImageSelect li.flex-active {
         color: #b3b3b3; }
 
-.socialMedia {
-  font-family: socialMedia; }
-
-  .clear {
-    clear: both; }
-
-    h2 {
-      text-transform: uppercase;
-      font-size: 18px;
-      font-weight: lighter;
-      letter-spacing: 4px; }
-
-      .introduction {
-        padding: 81px 110px 70px 113px;
-        background-color: #000;
-        color: #fff; }
-        .introduction h2 {
-          display: inline-block;
-          float: left; }
-          .introduction p {
-            display: inline-block;
-            float: right;
-            width: 433px;
-            line-height: 2.5;
-            font-size: 10px;
-            letter-spacing: 1.5px;
-            color: #b3b3b3;
-            font-family: proximanovaLight; }
+.introduction {
+  padding: 81px 110px 70px 113px;
+  background-color: #000;
+  color: #fff; }
+  .introduction h2 {
+    display: inline-block;
+    float: left;
+    color: #fff; }
+    .introduction p {
+      display: inline-block;
+      float: right;
+      width: 433px;
+      line-height: 2.5;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: #b3b3b3;
+      font-family: proximanovaLight; }
 
 .twitterFeed {
   height: 300px;
@@ -213,7 +226,8 @@
   color: #fff;
   text-align: center; }
   .twitterFeed h2 {
-    padding-top: 60px; }
+    padding-top: 60px;
+    color: #fff; }
     .twitterFeed blockquote {
       width: 350px;
       margin: auto;
@@ -258,38 +272,32 @@ footer .socialMedia li {
   list-style-type: none;
   margin: 0 2px; }
   footer h3 {
-    text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: normal;
-    font-family: proximanovaBold; }
-    footer p, footer ul, footer a, footer .credits {
-      color: #808080;
+    font-family: proximanovaBold;
+    color: #000; }
+    footer p, footer ul, footer a {
       list-style-type: none;
       letter-spacing: 1px; }
-      footer form {
-        margin-top: 10px; }
-        footer form input {
-          width: 120px;
-          display: inline;
-          height: 18px;
-          border: 1px solid #efefef;
-          padding: 2px 12px;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          font-size: 8px; }
-          footer form .joinButton {
-            height: 23px;
-            border-width: 1px;
-            padding: 2px;
-            margin: 0;
-            width: 68px;
-            background-color: #000;
-            color: #fff;
+      footer a {
+        color: #808080; }
+        footer form {
+          margin-top: 10px; }
+          footer form input {
+            width: 120px;
             display: inline;
+            height: 18px;
+            border: 1px solid #efefef;
+            padding: 2px 12px;
             text-transform: uppercase;
-            font-size: 8px;
             letter-spacing: 2px;
-            font-family: proximanovaBold; }
+            font-size: 8px; }
+            footer form .joinButton {
+              height: 23px;
+              width: 68px;
+              display: inline;
+              border-width: 1px;
+              padding: 2px;
+              margin: 0; }
 footer .credits {
   padding: 20px 113px;
   text-transform: uppercase;
@@ -303,3 +311,57 @@ footer .credits {
         text-decoration: none; }
         footer a:hover {
           color: #000; }
+
+.headerBackground {
+  height: 356px;
+  background-image: url('/static/img/grass_contact_background.png'); }
+
+  .contactDetails {
+    text-align: center;
+    padding: 47px 158px 67px; }
+    .contactDetails > p {
+      width: 480px;
+      padding: 31px 0 21px;
+      margin: auto;
+      font-size: 12px;
+      line-height: 2; }
+      .contactDetails hr {
+        width: 90px;
+        margin: auto; }
+        .contactDetails .contactContainer {
+          margin-top: 65px; }
+          .contactDetails .contactContainer .contactInfo {
+            float: left;
+            width: 35%;
+            text-align: left; }
+            .contactDetails .contactContainer .contactInfo ul {
+              list-style-type: none; }
+              .contactDetails .contactContainer .contactInfo h3 {
+                letter-spacing: 4px;
+                font-family: proximanovaLight; }
+                .contactDetails .contactContainer .contactInfo ul {
+                  padding: 10px 0 35px;
+                  line-height: 1.5;
+                  font-size: 11px;
+                  letter-spacing: 1px; }
+          .contactDetails .contactContainer form {
+            float: right;
+            width: 64%; }
+            .contactDetails .contactContainer input {
+              display: block;
+              width: 92%;
+              height: 10px;
+              border: 1px solid #efefef;
+              padding: 10px 4%;
+              margin-bottom: 17px; }
+              .contactDetails .contactContainer input.send {
+                height: 36px;
+                width: 91px;
+                float: right;
+                font-size: 10px; }
+          .contactDetails .contactContainer textarea {
+            display: block;
+            width: 92%;
+            border: 1px solid #efefef;
+            padding: 10px 4%;
+            margin: 17px 0; }
