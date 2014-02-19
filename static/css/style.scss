@@ -27,6 +27,7 @@
     font-weight: normal;
     font-style: normal;
 }
+$baseFontSize: 9px;
 
 //colours
 $lightFont: #fff;
@@ -140,7 +141,7 @@ input, select {
 
 body{
     max-width: 1000px;
-    font-size: 9px;
+    font-size: $baseFontSize;
     margin: auto;
     position: relative;
     color: $midGrayFont;
@@ -153,7 +154,7 @@ h2, h3{
     color: $darkGrayFont;
 }
 h2{
-    font-size: 18px;
+    font-size: $baseFontSize*2;
     font-weight: lighter;
     letter-spacing: 4px;
 }
@@ -167,7 +168,7 @@ h2{
     background-color: $darkBackgroundColor;
     color: $lightFont;
     text-transform: uppercase;
-    font-size:8px;
+    font-size:$baseFontSize*0.8;
     letter-spacing: 2px;
     font-family: proximanovaBold;
     cursor: pointer;
@@ -271,24 +272,30 @@ footer{
         padding: 0 11.3%;
         div{
             display: inline-block;
-            height:100px;
             vertical-align: top;
             padding-top:22px;
             line-height:1.8;
             &.mailingList{
-                width: 230px;
-                padding-right: 78px
+                min-width: 230px;
+                width: 30%;
+                padding-right: 78px;
+                @media (max-width: 640px){
+                    padding-right:0;
+                }
             }
             &.moreInfoLinks{
                 padding-right: 45px;
-                width: 120px;
+                min-width: 120px;
+                width:15%;
             }
             &.contact{
                 padding-right: 66px;
-                width: 120px;
+                min-width: 120px;
+                width:15%
             }
             &.socialMediaLinks{
-                width: 65px;
+                min-width: 80px;
+                width:11%;
             }
         }
     }
@@ -320,7 +327,7 @@ footer{
             padding:2px 12px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 8px;
+            font-size: $baseFontSize*0.8;
         }
         .joinButton{
             height:23px;
@@ -336,7 +343,7 @@ footer{
         padding:20px 11.3%;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 8px;
+        font-size: $baseFontSize*0.8;
     }
     .copyright{
         float:left;
@@ -365,11 +372,11 @@ footer{
     .sliderCaption{
         z-index: 3;
         position: absolute;
-        width:347px;
+        width:441px;
         bottom: 49px;
         right: 98px;
         blockquote{
-            font-size: 22px;
+            font-size: $baseFontSize*2.4;
             line-height:1.3;
             margin-bottom: 11px;
             font-family: proximanovaLight;
@@ -384,7 +391,7 @@ footer{
             background-color: $darkGrayFont;
             padding: 10px 10%;
             blockquote{
-                font-size: 16px;
+                font-size: $baseFontSize*1.8;
             }
         }
     }
@@ -392,7 +399,7 @@ footer{
         position: absolute;
         bottom: 20px;
         right: 50px;
-        font-size: 10px;
+        font-size: $baseFontSize*1.1;
         letter-spacing: 1px;
         list-style-type: none;
         z-index: 3;
@@ -421,7 +428,7 @@ footer{
         float:right;
         width: 55.7%;
         line-height: 2.5;
-        font-size: 10px;
+        font-size: $baseFontSize*1.1;
         letter-spacing: 1.5px;
         color: $lightGrayFont;
         font-family: proximanovaLight;
@@ -451,13 +458,13 @@ footer{
         width: 350px;
         margin:auto;
         letter-spacing: 2px;
-        font-size: 24px;
+        font-size: $baseFontSize*2.7;
         line-height: 1.5;
         display:inline-block;
     }
     .openQuote, .closeQuote{
         display:inline-block;
-        font-size:65px
+        font-size:$baseFontSize*7.2;
     }
     .openQuote{
         position: relative;
@@ -470,7 +477,7 @@ footer{
     @media (max-width: 640px){ //smartphones
         .openQuote, .closeQuote{
             display: inline;
-            font-size: 24px;
+            font-size: $baseFontSize*2.7;
             position: static;
         }
         blockquote{
@@ -495,7 +502,7 @@ footer{
         width:55%;
         padding: 31px 0 21px;
         margin: auto;
-        font-size: 12px;
+        font-size: $baseFontSize*1.3;
         line-height: 2
     }
     hr{
@@ -522,7 +529,7 @@ footer{
         ul{
             padding: 10px 0 35px;
             line-height: 1.5;
-            font-size: 11px;
+            font-size: $baseFontSize*1.2;
             letter-spacing: 1px
         }
     }
@@ -541,7 +548,7 @@ footer{
                 height: 36px;
                 width: 91px;
                 float:right;
-                font-size: 10px;
+                font-size: $baseFontSize*1.1;
             }
         }
         textarea{
