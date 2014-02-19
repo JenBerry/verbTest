@@ -2,28 +2,28 @@
 @font-face
 {
     font-family: 'proximanova';
-    src: url('/static/fonts/proximanova-regular.ttf') format('truetype');
+    src: url('../fonts/proximanova-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face
 {
     font-family: 'proximanovaBold';
-    src: url('/static/fonts/proximanova-bold.ttf') format('truetype');
+    src: url('../fonts/proximanova-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face
 {
     font-family: 'proximanovaLight';
-    src: url('/static/fonts/proximanova-light.ttf') format('truetype');
+    src: url('../fonts/proximanova-light.ttf') format('truetype');
     font-weight: lighter;
     font-style: normal;
 }
 @font-face
 {
     font-family: 'socialMedia';
-    src: url('/static/fonts/ss-social-regular.ttf') format('truetype');
+    src: url('../fonts/ss-social-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -182,7 +182,7 @@ header{
     z-index: 4;
     color: $lightFont;
 
-    @media (max-width: 768px)
+    @media (max-width: 768px) //so the headeer doesn't get lost in the background image
     {
         background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
@@ -438,7 +438,7 @@ footer{
 }
 .twitterFeed{
     height:300px;
-    background-image: url('/static/img/grass_background.png');
+    background-image: url('../img/grass_background.png');
     background-position: center;
     color: $lightFont;
     text-align: center;
