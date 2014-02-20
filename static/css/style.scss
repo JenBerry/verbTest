@@ -27,7 +27,7 @@
     font-weight: normal;
     font-style: normal;
 }
-$baseFontSize: 9px;
+$baseFontSize: 12px;
 
 //colours
 $lightFont: #fff;
@@ -140,7 +140,6 @@ input, select {
 /**/
 
 body{
-    max-width: 1000px;
     font-size: $baseFontSize;
     margin: auto;
     position: relative;
@@ -154,9 +153,15 @@ h2, h3{
     color: $darkGrayFont;
 }
 h2{
-    font-size: $baseFontSize*2;
+    font-size: $baseFontSize*1.8;
     font-weight: lighter;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
+    font-family: proximanovaLight;
+}
+.container{
+    max-width:1000px;
+    margin:auto;
+    position: relative;
 }
 .socialMedia{
     font-family: socialMedia;
@@ -174,8 +179,8 @@ h2{
     cursor: pointer;
 }
 
-header{
-    padding: 30px 9% 30px;
+.header{
+    padding: 34px 0;
     position: absolute;
     top:0;
     right:0;
@@ -195,21 +200,19 @@ header{
     }
     h1{
         display: inline-block;
-        padding-left: 1.2%;
+        padding-left: 3%;
         float:left;
         img{
-            height: 27px;
+            height: 31px;
         }
     }
     nav{
         display: inline-block;
-        margin: 7px 0 0 7.7%;
+        margin: 10px 0 0 8.5%;
         float:left;
-        text-align: center;
-
         li{
-            margin: 0 8px;
-            letter-spacing: 2px;
+            margin: 0 11px;
+            letter-spacing: 3px;
             display: inline-block;
         }
     }
@@ -220,8 +223,9 @@ header{
     .socialMedia{
         display: inline-block;
         text-align: right;
-        margin-top: 7px;
+        margin-top: 10px;
         float:right;
+        margin-right:1%;
         li{
             margin: 0 2px;
         }
@@ -269,28 +273,28 @@ footer{
     .moreInfo{
         border-top: 1px solid $lineColor;
         border-bottom: 1px solid $lineColor;
-        padding: 0 11.3%;
+        padding: 0 4% 20px;
         div{
             display: inline-block;
             vertical-align: top;
             padding-top:22px;
             line-height:1.8;
             &.mailingList{
-                min-width: 230px;
+                min-width: 263px;
                 width: 30%;
-                padding-right: 78px;
+                padding-right: 84px;
                 @media (max-width: 640px){
                     padding-right:0;
                 }
             }
             &.moreInfoLinks{
-                padding-right: 45px;
+                padding-right: 65px;
                 min-width: 120px;
                 width:15%;
             }
             &.contact{
-                padding-right: 66px;
-                min-width: 120px;
+                padding-right: 80px;
+                min-width: 133px;
                 width:15%
             }
             &.socialMediaLinks{
@@ -320,7 +324,7 @@ footer{
     form{
         margin-top:10px;
         input{
-            width:120px;
+            width:150px;
             display:inline;
             height:18px;
             border:1px solid $lineColor;
@@ -331,7 +335,7 @@ footer{
         }
         .joinButton{
             height:23px;
-            width:68px;
+            width:83px;
             display: inline;
             border-width:1px;
             padding:2px;
@@ -340,7 +344,7 @@ footer{
     }
 
     .credits{
-        padding:20px 11.3%;
+        padding:20px 4%;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-size: $baseFontSize*0.8;
@@ -368,18 +372,21 @@ footer{
     .flexslider{
         border:0;
         margin: 0;
+        max-height:788px;
+        overflow:hidden;
     }
     .sliderCaption{
         z-index: 3;
         position: absolute;
-        width:441px;
-        bottom: 49px;
-        right: 98px;
+        width:413px;
+        bottom: 55px;
+        right: 20px;
         blockquote{
             font-size: $baseFontSize*2.4;
-            line-height:1.3;
+            line-height:1.2;
             margin-bottom: 11px;
             font-family: proximanovaLight;
+            letter-spacing: -1px;
         }
         cite{
             font-style: normal;
@@ -398,7 +405,7 @@ footer{
     .sliderImageSelect{
         position: absolute;
         bottom: 20px;
-        right: 50px;
+        right: 5px;
         font-size: $baseFontSize*1.1;
         letter-spacing: 1px;
         list-style-type: none;
@@ -414,61 +421,67 @@ footer{
 }
 
 .introduction{
-    padding: 81px 11% 70px 11.3%;
     background-color: $darkBackgroundColor;
     color: $lightFont;
+    .container{
+        padding-top: 95px;
+        padding-bottom: 74px;
+    }
     h2{
         
         display:inline-block;
         float:left;
         color: $lightFont;
+        padding: 0 40px;
     }
     p{
         display: inline-block;
         float:right;
-        width: 55.7%;
+        width: 52%;
         line-height: 2.5;
         font-size: $baseFontSize*1.1;
         letter-spacing: 1.5px;
         color: $lightGrayFont;
         font-family: proximanovaLight;
-        margin-top: -8px
+        margin: -8px 35px 0;
     }
 
     @media (max-width: 768px){ //portrait tablets
         p{
             float:none;
-            width: 100%;
+            width: auto;
             margin-top:24px;
         }
     }
 }
 .twitterFeed{
-    height:300px;
+    height:354px;
     background-image: url('../img/grass_background.png');
+    background-size: cover;
     background-position: center;
     color: $lightFont;
     text-align: center;
     h2{
-        padding-top: 60px;
+        padding-top: 65px;
         color: $lightFont;
-        padding-bottom: 63px;
+        padding-bottom: 70px;
     }
     blockquote{
         width: 350px;
         margin:auto;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: $baseFontSize*2.7;
         line-height: 1.5;
         display:inline-block;
+        font-family: proximanovaLight;
     }
     .openQuote, .closeQuote{
         display:inline-block;
-        font-size:$baseFontSize*7.2;
+        font-size:$baseFontSize*8.3;
     }
     .openQuote{
         position: relative;
-        top:-30px
+        top:-30px133px
     }
     .closeQuote{
         position: relative;
@@ -497,7 +510,7 @@ footer{
 
 .pageContent{
     text-align: center;
-    padding: 48px 6.9% 67px;
+    padding: 60px 1% 90px;
     &>p{
         width:55%;
         padding: 31px 0 21px;
@@ -546,7 +559,7 @@ footer{
             margin-bottom: 17px;
             &.send{
                 height: 36px;
-                width: 91px;
+                width: 110px;
                 float:right;
                 font-size: $baseFontSize*1.1;
             }
@@ -573,23 +586,27 @@ footer{
 }
 
 /* heading pages */
+.headingPage{
+    max-height:519px;
+    overflow: hidden;
+}
 .articalContainer{
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
     .mainArticals{
         padding: 42px 0 0;
         width: 49.8%;
         min-width: 290px;
         display: inline-block;
         img{
-            height: 48px;
+            height: 57px;
         }
         p{
-            line-height: 2.5;
+            line-height: 2;
             letter-spacing: 1px;
             text-align: left;
             padding: 38px 0 0;
-            width:285px;
+            width:354px;
             margin:auto;
         }
     }

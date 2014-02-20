@@ -3,12 +3,14 @@
 <section class="headerBackground {% block imageId %}contactPage{%endblock%}">
 	<img src={% block imageURL %}"/static/img/grass_contact_background.png"{% endblock %} alt="background">
 </section>
-<section class="pageContent">
-	<h2>{% block pageTitle %}Title{% endblock %}</h2>
-	<p>{% block pageSubtitle %}Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.Cras justo odio, dapibus ac facilisis in, egestas eget quam.{% endblock %}</p>
-	
-	{% block pageDetails %}
-	{% endblock %}
+<div class="container">
+	<section class="pageContent">
+		<h2>{% block pageTitle %}Title{% endblock %}</h2>
+		<p>{% block pageSubtitle %}Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.Cras justo odio, dapibus ac facilisis in, egestas eget quam.{% endblock %}</p>
+		
+		{% block pageDetails %}
+		{% endblock %}
 
-</section>
+	</section>
+</div>
 {% endblock %}
