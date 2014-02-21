@@ -467,7 +467,7 @@ footer{
         padding-bottom: 70px;
     }
     blockquote{
-        width: 350px;
+        width: 80%;
         margin:auto;
         letter-spacing: 1px;
         font-size: $baseFontSize*2.7;
@@ -481,7 +481,7 @@ footer{
     }
     .openQuote{
         position: relative;
-        top:-30px133px
+        vertical-align: top;
     }
     .closeQuote{
         position: relative;

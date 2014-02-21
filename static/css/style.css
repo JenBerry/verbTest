@@ -347,7 +347,7 @@ footer {
     color: #fff;
     padding-bottom: 70px; }
     .twitterFeed blockquote {
-      width: 350px;
+      width: 80%;
       margin: auto;
       letter-spacing: 1px;
       font-size: 32.4px;
@@ -359,7 +359,7 @@ footer {
         font-size: 99.6px; }
         .twitterFeed .openQuote {
           position: relative;
-          top: -30 px133px; }
+          vertical-align: top; }
           .twitterFeed .closeQuote {
             position: relative;
             bottom: -40px; }

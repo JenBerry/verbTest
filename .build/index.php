@@ -5,16 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico"> 
-	<link rel="stylesheet" href="{{ STATIC_URL }}/css/style.css">
+	<link rel="shortcut icon" href="./static/favicon.ico"> 
+	<link rel="stylesheet" href="./static/css/style.css">
 
-	{% block header %}
+	
 	<title>VE&#1071;B</title>
-	{% endblock %}
+	
 </head>
 <body>
-	{% block content %}
-		{% block pageHeader %}
+	
+		
 			<header class='container'>
 				<div class="header">
 					<h1><img src="static/img/verb_logo.svg" alt="Verb"></h1>
@@ -36,11 +36,76 @@
 					</nav>
 				</div>
 			</header>
-		{% endblock %}
-			{% block pageContent %}
-				Hello World!
-			{% endblock %}
-		{% block footer %}
+		
+			
+	<section class="homeSlider">
+		<div class="flexslider">
+		  <ul class="slides">
+		    <li>
+		      <img src="static/img/home_slider_1.png" alt="slider image"/>
+		    </li>
+		    <li>
+		      <img src="static/img/home_slider_2.png" alt="slider image"/>
+		    </li>
+		    <li>
+		      <img src="static/img/home_slider_3.png" alt="slider image"/>
+		    </li>
+		    <li>
+		      <img src="static/img/home_slider_1.png" alt="slider image"/>
+		    </li>
+		    <li>
+		      <img src="static/img/home_slider_2.png" alt="slider image"/>
+		    </li>
+		    <li>
+		      <img src="static/img/home_slider_3.png" alt="slider image"/>
+		    </li>
+		    <li>
+		      <img src="static/img/home_slider_3.png" alt="slider image"/>
+		    </li>
+
+		  </ul>
+		</div>
+		<div class="container">
+			 <ol class="sliderImageSelect">
+				<li>1 |</li>
+				<li>2 |</li>
+				<li>3 |</li>
+				<li>4 |</li>
+				<li>5 |</li>
+				<li>6 |</li>
+				<li>7</li>
+			</ol>
+			<div class="sliderCaption">
+				<blockquote>
+					<p>&#8220;Donec auctor volutpat lorem, nec cursus augue congue ac. Curabitur malesuada lacinia lorem...&#8221;</p>
+				</blockquote>
+				<cite>Warren Moore</cite>
+			</div>
+		</div>
+
+	</section>
+	<section class="introduction">
+		<div class="container">
+			<h2>Introduction</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed facilisis neque, a pulvinar justo. Vivamus vehicula ligula diam, sit amet dictum mi aliquet in. Mauris sed lectus a sem interdum convallis. Duis dictum luctus purus, non porta neque aliquam in. Integer lobortis vestibulum vehicula. Morbi ut faucibus felis. Quisque nec ultrices quam. Vivamus erat leo, placerat et sem a, consequat euismod erat.</p>
+			<div class="clear"></div>
+		</div>
+	</section>
+	<section class="twitterFeed">
+		<div class="container">
+			<h2><span class="socialMedia">&#62993;</span> Latest Tweets</h2>
+			<p class="openQuote">&#8220;</p>
+			<blockquote>
+				<?php 
+					require 'twitter.php';
+					echo getLatestTweet();
+				 ?>
+			</blockquote>
+			<p class="closeQuote">&#8221;</p>
+		</div>
+	</section>
+
+		
 			<footer class="container">
 				<section class="moreInfo">
 					<div class="mailingList">
@@ -83,14 +148,24 @@
 				</section>
 				<div class="clear"></div>
 			</footer>
-		{% endblock %}
-	{% endblock %}
+		
+	
 
-	{% block scripts %}
+	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="{{ STATIC_URL }}/js/main.js"></script>
-		{% block extraScripts %}
-		{% endblock %}
-	{% endblock %}
+	<script src="./static/js/main.js"></script>
+		
+	<link rel="stylesheet" href="static/js/FlexSlider/flexslider.css">
+	<script src="static/js/FlexSlider/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+	  $(window).load(function() {
+	    $('.flexslider').flexslider({
+	    	manualControls: ".sliderImageSelect li",
+	    	animation: "slide",
+	    });
+	  });
+	</script>
+
+	
 </body>
 </html>
