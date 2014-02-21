@@ -1,3 +1,7 @@
+COPYRIGHT JEN BERRY. ALL RIGHTS RESERVED.
+This code is made available for demonstration purposes only, and may not be copied, modified or used by anyone in any way.
+-----------------------------------------------------
+
 A test website for a job application.
 Website created from the design in /dev/VERB-TEST.pdf
 
